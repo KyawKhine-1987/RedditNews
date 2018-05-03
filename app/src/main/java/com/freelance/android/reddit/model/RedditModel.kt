@@ -16,7 +16,7 @@ data class RedditModel(
             data class Data(
                     @SerializedName("author") val author: String,
                     @SerializedName("thumbnail") val thumbnail: String,
-                    @SerializedName("created") val created: Int,
+                    @SerializedName("created") val created: Long,
                     @SerializedName("url") val url: String,
                     @SerializedName("num_comments") val num_comments: Int,
                     @SerializedName("title") val title: String)

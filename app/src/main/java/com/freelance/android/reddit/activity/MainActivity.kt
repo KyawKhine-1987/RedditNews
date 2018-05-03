@@ -1,7 +1,9 @@
 package com.freelance.android.reddit
 
 import android.content.Context
+import android.content.Intent
 import android.net.ConnectivityManager
+import android.net.Uri
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
@@ -19,7 +21,7 @@ import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), RedditAdapter.Listener {
 
     private val LOG_TAG = MainActivity::class.java.getName()
 
@@ -113,5 +115,14 @@ class MainActivity : AppCompatActivity() {
 
         super.onDestroy()
         disposable?.dispose()
+    }
+
+    override fun onItemClick(redditModel: RedditModel.ParentData.Children) {
+        Log.i(LOG_TAG, "TEST: onItemClick() is called...")
+
+        //Toast.makeText(this, "${redditModel.data.children[0].data.title} Clicked !", Toast.LENGTH_SHORT).show()
+        val mRedditNewsUrl = Uri.parse(redditModel.data.url)
+        val browserIntent = Intent(Intent.ACTION_VIEW, mRedditNewsUrl)
+        startActivity(browserIntent)
     }
 }
