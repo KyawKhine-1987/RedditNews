@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/ivThumbnail"
             android:layout_toRightOf="@+id/ivThumbnail"
-            android:textColor="#343434"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="15sp"
             android:textStyle="bold"
             android:typeface="sans"
@@ -50,7 +50,7 @@
             android:layout_alignLeft="@+id/tvTitle"
             android:layout_alignStart="@+id/tvTitle"
             android:layout_below="@+id/tvTitle"
-            android:textColor="#343434"
+            android:textColor="@color/orange"
             android:textSize="12.5sp"
             tools:ignore="SmallSp"
             tools:text="Author 123"/>

@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initView() {
-        Log.i(LOG_TAG, "TEST: initView() is called...")
+        Log.i(LOG_TAG, "TEST: initView() is called")
 
         val rvNewsList = this.findViewById(R.id.rvNewsList) as RecyclerView
         rvNewsList.layoutManager = LinearLayoutManager(this, LinearLayout.VERTICAL, false)
