@@ -1,4 +1,4 @@
-package com.freelance.android.reddit
+package com.freelance.android.reddit.activity
 
 import android.content.Context
 import android.content.Intent
@@ -13,6 +13,7 @@ import android.util.Log
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.Toast
+import com.freelance.android.reddit.R
 import com.freelance.android.reddit.adapter.RedditAdapter
 import com.freelance.android.reddit.model.RedditModel
 import com.freelance.android.reddit.service.APIService

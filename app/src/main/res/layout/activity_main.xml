@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
     <!--android:background="@android:color/white"-->
 
     <android.support.design.widget.AppBarLayout
@@ -30,9 +30,9 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="62dip"
+        android:layout_marginTop="55dip"
         android:background="#cccccc">
-        <!---->
+        <!--android:layout_marginTop="62dip"-->
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rvNewsList"

@@ -5,11 +5,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="2dip"
     android:orientation="horizontal"
     android:padding="5dip"
     CardView:cardUseCompatPadding="true">
-    <!--CardView:cardElevation="4dp"-->
+    <!--android:layout_margin="2dip"
+    CardView:cardElevation="4dp"-->
 
     <RelativeLayout
         android:id="@+id/rlContainer"
@@ -25,7 +25,8 @@
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="3dp"
+            />
 
         <!-- Description -->
 
@@ -39,19 +40,21 @@
             android:textSize="15sp"
             android:textStyle="bold"
             android:typeface="sans"
+            android:autoSizeTextType="uniform"
             tools:text="This should be a long description like this example that I'm showing."/>
-
+        <!---->
         <!-- Author -->
 
         <TextView
             android:id="@+id/tvAuthor"
-            android:layout_width="fill_parent"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/tvTitle"
             android:layout_alignStart="@+id/tvTitle"
             android:layout_below="@+id/tvTitle"
             android:textColor="@color/orange"
             android:textSize="12.5sp"
+            android:autoSizeTextType="uniform"
             tools:ignore="SmallSp"
             tools:text="Author 123"/>
 
@@ -59,7 +62,7 @@
 
         <TextView
             android:id="@+id/tvComments"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_alignEnd="@+id/tvAuthor"
             android:layout_alignRight="@+id/tvAuthor"
@@ -70,6 +73,7 @@
             android:textStyle="bold"
             tools:ignore="SmallSp"
             android:layout_marginRight="3dip"
+            android:autoSizeTextType="uniform"
             tools:text="30012 comments"/>
 
         <!-- Time -->
@@ -82,9 +86,11 @@
             android:layout_alignStart="@+id/tvAuthor"
             android:layout_below="@+id/tvAuthor"
             android:textColor="#343434"
-            android:textSize="10sp"
+            android:textSize="13sp"
+            android:autoSizeTextType="uniform"
             tools:ignore="SmallSp"
-            tools:text="12 hours ago"/>
+            tools:text="12 hours ago"
+            android:layout_marginBottom="5dp"/>
 
     </RelativeLayout>
 
